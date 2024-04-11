@@ -1,0 +1,18 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/login/index",
+    "pages/home/index",
+    "pages/layout/index",
+    "pages/bind/index",
+    "pages/layout/rowColumnPage",
+    "pages/layout/stackPage",
+    "pages/layout/flexPage",
+    "pages/layout/relativePage",
+    "pages/layout/gridPage",
+    "pages/layout/mediaQueryPage",
+    "pages/layout/listPage",
+    "pages/layout/swiperPage",
+    "pages/layout/gridRowPage"
+  ]
+}
