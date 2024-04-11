@@ -10,11 +10,16 @@ struct LayoutIndex {
 
 
   aboutToAppear(){
+    if(this.getLoginStatus()){
+      router.pushUrl({url:"pages/home/index"})
+      return
+    }
+    router.pushUrl({url:"pages/login/index"})
 
   }
 
-  getLoginSattus():boolean{
-
+  getLoginStatus():boolean{
+     return false
   }
 
   build() {
