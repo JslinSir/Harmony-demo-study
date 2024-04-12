@@ -2,7 +2,6 @@
   "src": [
     "pages/Index",
     "pages/login/index",
-    "pages/home/index",
     "pages/layout/index",
     "pages/bind/index",
     "pages/layout/rowColumnPage",

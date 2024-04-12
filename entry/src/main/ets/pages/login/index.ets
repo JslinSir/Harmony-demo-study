@@ -23,7 +23,7 @@ struct LoginPage {
       return
     }
     router.replaceUrl({
-      url:"pages/home/index"
+      url:"pages/main/index"
     })
 
   }

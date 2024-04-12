@@ -1,20 +1,23 @@
 
 import router from '@ohos.router';
-
+import MainPage from './main/index';
 import distributedKVStore from '@ohos.data.distributedKVStore';
 
 @Entry
 @Component
 struct LayoutIndex {
-    loginStatus: boolean = false
+    @State loginStatus: boolean = false
 
 
   aboutToAppear(){
-    if(this.getLoginStatus()){
-      router.pushUrl({url:"pages/home/index"})
-      return
-    }
-    router.pushUrl({url:"pages/login/index"})
+    // if(this.getLoginStatus()){
+    //   router.pushUrl({url:"pages/main/index"})
+    //   return
+    // }
+    // router.pushUrl({url:"pages/login/index"})
+    setTimeout(()=>{
+       this.loginStatus = true
+    },1000)
 
   }
 
@@ -23,12 +26,17 @@ struct LayoutIndex {
   }
 
   build() {
+
     Column() {
-      LoadingProgress().width(100).height(100)
-      Text('加载中...')
-        .margin({top:20})
-        .fontColor("#999")
-        .fontSize(20)
+     if(this.loginStatus){
+       MainPage()
+     }else{
+       LoadingProgress().width(100).height(100)
+       Text('加载中...')
+         .margin({top:20})
+         .fontColor("#999")
+         .fontSize(20)
+     }
     }
     .width('100%')
     .height('100%')
