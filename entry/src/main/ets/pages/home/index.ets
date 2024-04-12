@@ -1,6 +1,6 @@
 
 import router from '@ohos.router';
-
+import TabsBarView from './components/tabsBar'
 
 @Entry
 @Component
@@ -16,19 +16,8 @@ struct HomePage {
   }
 
   build() {
-    Row() {
-      Column() {
-        Button('布局').onClick(()=>{
-          router.pushUrl({
-            url:'pages/layout/index'
-          })
-        })
-        Row().height(20)
-        Button('状态通信')
-
-      }
-      .width('100%')
+    Column(){
+      TabsBarView()
     }
-    .height('100%')
   }
 }

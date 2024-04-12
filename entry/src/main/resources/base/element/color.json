@@ -9,6 +9,14 @@
       "value": "#FFFFFF"
     },
     {
+      "name": "primary",
+      "value": "#ff3232"
+    },
+    {
+      "name": "grey",
+      "value": "#999"
+    },
+    {
       "name": "page_bg",
       "value": "#f6f6f6"
     }

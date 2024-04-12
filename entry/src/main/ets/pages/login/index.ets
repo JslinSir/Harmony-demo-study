@@ -101,11 +101,12 @@ struct LoginPage {
     Column() {
       Stack({ alignContent: Alignment.TopStart }) {
         this.renderHeader()
-        this.renderFormCard()
       }
+      .position({x:0,y:0})
       .backgroundColor($r('app.color.white'))
       .width('100%')
       .height('100%')
+      this.renderFormCard()
     }
     .alignItems(HorizontalAlign.Start)
     .justifyContent(FlexAlign.Start)
