@@ -12,6 +12,13 @@
     "pages/layout/mediaQueryPage",
     "pages/layout/listPage",
     "pages/layout/swiperPage",
-    "pages/layout/gridRowPage"
+    "pages/layout/gridRowPage",
+    "pages/message/index",
+    "pages/message/props",
+    "pages/message/LinkPage",
+    "pages/message/ProvideConsumePage",
+    "pages/message/ObservedPage",
+    "pages/message/TrackPage",
+    "pages/basec/index"
   ]
 }

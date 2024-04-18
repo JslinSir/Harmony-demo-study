@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "ShoppingAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "ShoppingAbility_label",
+      "value": "label"
+    }
+  ]
+}

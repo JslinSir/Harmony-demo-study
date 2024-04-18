@@ -26,7 +26,6 @@ struct LayoutIndex {
   }
 
   build() {
-
     Column() {
      if(this.loginStatus){
        MainPage()

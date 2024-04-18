@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "shopping",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "ShoppingAbility",
+    "deviceTypes": [
+      "phone"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "ShoppingAbility",
+        "srcEntry": "./ets/shoppingability/ShoppingAbility.ts",
+        "description": "$string:ShoppingAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:ShoppingAbility_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}
