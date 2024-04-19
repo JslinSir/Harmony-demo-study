@@ -30,6 +30,7 @@ export  class  Student extends  Person {
   }
   // 重写say
   say(){
+    // super.say()
     console.log(`我叫：${this.name},今年${this.age}，我是一名学生`)
   }
 
