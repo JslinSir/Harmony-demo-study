@@ -5,6 +5,7 @@ import Navibar from '../../common/components/navibar'
 
 
 @Entry
+
 @Component
 struct FlexPage {
   @State message: string = 'Hello World'

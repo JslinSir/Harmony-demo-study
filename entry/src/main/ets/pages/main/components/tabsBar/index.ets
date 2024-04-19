@@ -7,9 +7,7 @@ import AccountView from '../account/index'
 @Component
 export default struct TabsBarView {
   private tabsController: TabsController = new TabsController()
-  private comfigs = {
-    0 : HomeView
-  }
+
   @State currentIndex: number = 0;
 
   @Builder TabBuilder(item: ItabBarItem, targetIndex: number) {
@@ -29,7 +27,7 @@ export default struct TabsBarView {
   }
 
   /**
-   * Builder 函数只
+   * Builder
    * @param index
    */
   @Builder

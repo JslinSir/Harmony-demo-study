@@ -29,6 +29,10 @@ interface IbtnModal {
   })
 }
 
+
+
+
+
 // alert
 @CustomDialog
 export  struct  AlertDialog {
@@ -36,6 +40,7 @@ export  struct  AlertDialog {
   message:string;
   btnText:string = '知道了';
   btnColor:string = '#333';
+  @BuilderParam customContent?: ()=> void;
   onConfirm?:()=> void
   controller: CustomDialogController = new CustomDialogController({
     builder: AlertDialog({}),
@@ -48,7 +53,11 @@ export  struct  AlertDialog {
         renderTitle(this.title)
       }
       if(this.message){
-        renderContent(this.message)
+        if(this.customContent){
+          this.customContent()
+        }else{
+          renderContent(this.message)
+        }
       }
       renderBottomGroupBtn([{
         color:this.btnText,
@@ -65,7 +74,7 @@ export  struct ConfirmDialog {
   cancel?: () => void
   confirm?: () => void
   controller: CustomDialogController = new CustomDialogController({
-    builder: AlertDialog({}),
+    builder: ConfirmDialog({}),
   })
   build() {
     Column() {
