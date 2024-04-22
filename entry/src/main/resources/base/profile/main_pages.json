@@ -19,6 +19,7 @@
     "pages/message/ProvideConsumePage",
     "pages/message/ObservedPage",
     "pages/message/TrackPage",
-    "pages/basec/index"
+    "pages/basec/index",
+    "pages/customc/index"
   ]
 }

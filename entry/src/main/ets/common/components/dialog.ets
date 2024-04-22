@@ -5,11 +5,23 @@
  *
  */
 
+class BtnModal {
+  title?:string;
+  message?:string;
+  btnText?:string = '知道了';
+  btnColor?:string = '#333';
+
+  constructor() {
+    
+  }
+}
+
 interface IbtnModal {
   btnText:string;
   color:string | Resource
   onClick?:()=> void
 }
+
 
 // 渲染标题
 @Builder function renderTitle(title:string){
@@ -36,10 +48,10 @@ interface IbtnModal {
 // alert
 @CustomDialog
 export  struct  AlertDialog {
-  title:string;
-  message:string;
-  btnText:string = '知道了';
-  btnColor:string = '#333';
+  title?:string;
+  message?:string;
+  btnText?:string = '知道了';
+  btnColor?:string = '#333';
   @BuilderParam customContent?: ()=> void;
   onConfirm?:()=> void
   controller: CustomDialogController = new CustomDialogController({

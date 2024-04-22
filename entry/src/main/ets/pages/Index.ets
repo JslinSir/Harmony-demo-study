@@ -1,17 +1,13 @@
 
 import router from '@ohos.router';
 import MainPage from './main/index';
-import distributedKVStore from '@ohos.data.distributedKVStore';
-import  { Student,Person } from '../common/utils/index'
+
 @Entry
 @Component
 struct LayoutIndex {
     @State loginStatus: boolean = false
-    xiaoming:Student = new Student({name:'小明',age:18})
 
   aboutToAppear(){
-    this.xiaoming.say()
-    this.xiaoming.sunde()
     // if(this.getLoginStatus()){
     //   router.pushUrl({url:"pages/main/index"})
     //   return
